@@ -46,9 +46,6 @@
   transition: 0.3s;
   cursor: pointer;
 }
-.hands__rock--active, .hands__paper--active, .hands__scissors--active {
-  border: 8px solid black;
-}
 .hands__rock {
   background-color: rgb(255, 49, 49);
 }
@@ -102,4 +99,7 @@
 }
 .info__result {
   min-width: 220px;
+}
+.info__result-player-choice-span, .info__result-ai-choice-span {
+  font-weight: 900;
 }/*# sourceMappingURL=main.css.map */
