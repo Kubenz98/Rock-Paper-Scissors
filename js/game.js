@@ -10,11 +10,16 @@ class Game {
         this.spanDraws = document.querySelector(".info__stats-draws-span");
         this.select = new Select(this.hands);
         document.querySelector(".hands__button").addEventListener("click", this.startGame.bind(this));
+        this.result = new Result(this.select.choices)
     }
     startGame() {
-        this.select.aiSelect();
-        console.log(this.select.choices);
-        
+        if (this.select.choices.player) {
+            this.select.aiSelect();
+            const result = this.result.check();
+            console.log(result);
+            
+        } else return alert("Select your hand!");
+
     }
 
 }
