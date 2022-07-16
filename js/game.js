@@ -17,7 +17,7 @@ class Game {
             this.select.aiSelect();
             const result = this.result.check();
             console.log(result);
-            
+            this.result.publication(result, this.spanYourChoice, this.spanAiChoice, this.spanWinner);
         } else return alert("Select your hand!");
 
     }
