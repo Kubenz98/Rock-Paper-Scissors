@@ -4,16 +4,16 @@ class Select {
         this.choices = {
             player: "",
             ai: ""
-        }
+        };
         this.playerSelect()
     }
     playerSelect() {
         this.hands.forEach(hand => {
             hand.addEventListener("click", () => {
                 this.hands.forEach(hand => {
-                    hand.style.border = "8px solid transparent"
+                    hand.style.border = "8px solid transparent";
                 })
-                hand.style.border = "8px solid black"
+                hand.style.border = "8px solid black";
                 this.choices.player = hand.dataset.option;
             })
         });
