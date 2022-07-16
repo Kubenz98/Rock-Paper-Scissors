@@ -10,7 +10,8 @@ class Game {
         this.spanDraws = document.querySelector(".info__stats-draws-span");
         this.select = new Select(this.hands);
         document.querySelector(".hands__button").addEventListener("click", this.startGame.bind(this));
-        this.result = new Result(this.select.choices)
+        this.result = new Result(this.select.choices);
+        this.stats = new Stats();
     }
     startGame() {
         if (this.select.choices.player) {
@@ -18,6 +19,7 @@ class Game {
             const result = this.result.check();
             console.log(result);
             this.result.publication(result, this.spanYourChoice, this.spanAiChoice, this.spanWinner);
+            this.stats.update(result, this.spanGamesCount, this.spanWins, this.spanLosses, this.spanDraws);
         } else return alert("Select your hand!");
 
     }
