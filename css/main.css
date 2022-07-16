@@ -98,8 +98,22 @@
   color: white;
 }
 .info__result {
+  text-align: left;
   min-width: 220px;
+}
+.info__result-player-choice, .info__result-ai-choice {
+  margin-bottom: 10px;
 }
 .info__result-player-choice-span, .info__result-ai-choice-span {
   font-weight: 900;
+}
+.info__result-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.info__stats-title {
+  margin-bottom: 10px;
+}
+.info__stats-games, .info__stats-wins, .info__stats-losses, .info__stats-draws {
+  margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */

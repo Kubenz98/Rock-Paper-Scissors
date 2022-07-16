@@ -13,9 +13,26 @@
     }
 
     &__result {
+        text-align: left;
         min-width: 220px;
-        &-player-choice-span, &-ai-choice-span {
-            font-weight: 900;
+        &-player-choice, &-ai-choice {
+            margin-bottom: 10px;
+            &-span {
+                font-weight: 900;
+            }
+        }
+        &-title {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    &__stats {
+        &-title {
+            margin-bottom: 10px;
+        }
+        &-games, &-wins, &-losses, &-draws {
+            margin-bottom: 5px;
         }
     }
 }
