@@ -46,6 +46,11 @@
   transition: 0.3s;
   cursor: pointer;
 }
+@media (max-width: 660px) {
+  .hands__rock, .hands__paper, .hands__scissors {
+    width: 150px;
+  }
+}
 .hands__rock {
   background-color: rgb(255, 49, 49);
 }

@@ -23,6 +23,9 @@
         width: 200px;
         transition: 0.3s;
         cursor: pointer;
+        @media(max-width: 660px) {
+            width: 150px;
+        }
     }
 
     &__rock{
