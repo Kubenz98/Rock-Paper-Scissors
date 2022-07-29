@@ -49,6 +49,7 @@
 @media (max-width: 660px) {
   .hands__rock, .hands__paper, .hands__scissors {
     width: 150px;
+    margin: 5px;
   }
 }
 .hands__rock {
@@ -92,19 +93,23 @@
 
 .info {
   grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50px;
 }
 .info__result, .info__stats {
-  justify-self: center;
   padding: 10px 20px;
   background-color: rgb(43, 43, 43);
   color: white;
 }
 .info__result {
   text-align: left;
-  min-width: 220px;
+  width: 220px;
+  margin-right: 20px;
 }
 .info__result-player-choice, .info__result-ai-choice {
   margin-bottom: 10px;
@@ -115,6 +120,9 @@
 .info__result-title {
   margin-bottom: 10px;
   text-align: center;
+}
+.info__stats {
+  width: 150px;
 }
 .info__stats-title {
   margin-bottom: 10px;

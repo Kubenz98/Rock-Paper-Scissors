@@ -1,12 +1,11 @@
 .info {
     grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 
     &__result,
     &__stats {
-        justify-self: center;
         padding: 10px 20px;
         background-color: rgb(43, 43, 43);
         color: white;
@@ -14,7 +13,8 @@
 
     &__result {
         text-align: left;
-        min-width: 220px;
+        width: 220px;
+        margin-right: 20px;
         &-player-choice, &-ai-choice {
             margin-bottom: 10px;
             &-span {
@@ -28,6 +28,7 @@
     }
 
     &__stats {
+        width: 150px;
         &-title {
             margin-bottom: 10px;
         }
