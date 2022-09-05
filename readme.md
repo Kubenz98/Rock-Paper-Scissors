@@ -1,6 +1,6 @@
 # Rock, paper, scissors
 
-Game created in OOP with Javascript, BEM and SCSS.
+Game created in OOP with Javascript, BEM and SCSS. Webpack bundled.
 
 ### attributions:
 <a href="https://www.flaticon.com/free-icons/fist" title="fist icons">Fist icons created by vectorspoint - Flaticon</a>
