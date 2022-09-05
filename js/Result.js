@@ -1,4 +1,4 @@
-class Result {
+export class Result {
     constructor(choices) {
         this.choices = choices;
     }

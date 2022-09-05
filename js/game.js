@@ -1,5 +1,5 @@
-class Game {
-    constructor() {
+export class Game {
+    constructor(Select, Result, Stats) {
         this.hands = [...document.querySelectorAll(".hand")];
         this.spanYourChoice = document.querySelector(".info__result-player-choice-span");
         this.spanAiChoice = document.querySelector(".info__result-ai-choice-span");

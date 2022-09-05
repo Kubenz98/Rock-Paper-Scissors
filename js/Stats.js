@@ -1,4 +1,4 @@
-class Stats {
+export class Stats {
     constructor() {
         this.scores = {
             count: 0,
@@ -8,10 +8,6 @@ class Stats {
         }
     }
     update(result, spanCount, spanWins, spanLosses, spanDraws) {
-        // spanCount.textContent = this.scores.count;
-        // spanWins.textContent = this.scores.wins;
-        // spanLosses.textContent = this.scores.losses;
-        // spanDraws.textContent = this.scores.spanDraws;
 
         this.scores.count++;
         spanCount.textContent = this.scores.count;

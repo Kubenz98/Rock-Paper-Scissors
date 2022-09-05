@@ -1,4 +1,4 @@
-class Select {
+export class Select {
     constructor(hands) {
         this.hands = hands;
         this.choices = {
