@@ -17,6 +17,8 @@
         margin-right: 20px;
         &-player-choice, &-ai-choice {
             margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 400;
             &-span {
                 font-weight: 900;
             }
@@ -28,12 +30,14 @@
     }
 
     &__stats {
-        width: 150px;
+        width: 160px;
         &-title {
             margin-bottom: 10px;
         }
         &-games, &-wins, &-losses, &-draws {
             margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 400;
         }
     }
 }
