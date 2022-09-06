@@ -2,6 +2,16 @@
 
 Game created in OOP with Javascript, BEM and SCSS. Webpack bundled.
 
+# How to run
+
+1. Clone the repository.
+
+2. `npm i`
+
+3. `npm start` for start Webpack dev server.
+
+4. `npm run build` for build production. Path: `dist/`.
+
 ### attributions:
 <a href="https://www.flaticon.com/free-icons/fist" title="fist icons">Fist icons created by vectorspoint - Flaticon</a>
 
